@@ -13,7 +13,11 @@ public class CombineWords {
         System.out.println("Enter a word:");
         input2= scanner.next();
 
-        output=input1+input2;
+
+        if (input1.endsWith((""+input2.charAt(0))))
+            output=input1+input2.substring(1);
+        else
+            output=input1+input2;
         System.out.println("output = " + output);
 
 
