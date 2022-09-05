@@ -11,6 +11,7 @@ public class CalledEmailTask2 {
         email=scanner.next();
 
 
+
         firstName=email.substring(0,email.indexOf("_"));
         lastName = email.substring(email.indexOf("_")+1,email.indexOf("@"));
         domain=email.substring(email.indexOf("@")+1,email.indexOf("."));

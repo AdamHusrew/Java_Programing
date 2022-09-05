@@ -1,4 +1,4 @@
-package day14_methodOverloadingAndLoops;
+package day15_whileLoop;
 
 import java.util.Scanner;
 
@@ -7,20 +7,15 @@ public class TysonProblem1 {
         Scanner input = new Scanner(System.in);
 
 
+        System.out.println("Enter a string:");
         String str = input.next();
 
         String result = "";
 
-        for (int i = 0; i < str.length()-1;i++) {
+        for (int i = 0; i < str.length();i++) {
 
-            if (str.charAt(i)== str.charAt(i+1)){
-                while(i<str.length()-1 && str.charAt(i) == str.charAt(i+1))
-                    i++;
-                result += str.charAt(i);
-
-            }
-
-
+            result+=str.charAt(i);
+            while(i<str.length()-1 && str.charAt(i) == str.charAt(i+1))  i++;
 
         }
 
