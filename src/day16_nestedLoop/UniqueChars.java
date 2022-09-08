@@ -11,28 +11,25 @@ public class UniqueChars {
                 input,
                 result="";
 
-        char
-                chi= 0,
-                chj = 0;
-
-        boolean unique=true;
 
         System.out.println("Enter a string:");
-        input= scanner.nextLine();
+        input= scanner.next();
 
         for (int i=0;i<input.length();i++){
-            unique=true;
-            for (int j=i;j<input.length();j++){
-
-                if( j!=i && input.charAt(i)==input.charAt(j)){
-                    unique=false;
-                    break;
+            int count=0;
+            char chi=input.charAt(i);
+            for (int j=0;j<input.length();j++){
+                char chj=input.charAt(j);
+                if(chi==chj){
+                   count++;
 
                 }
             }
 
-            if (unique)
-                result+=input.charAt(i);
+            if (count!=1)
+               continue;
+
+            result+=chi;
 
 
         }
