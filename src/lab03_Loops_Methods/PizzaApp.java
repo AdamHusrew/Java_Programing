@@ -74,10 +74,10 @@ public class PizzaApp {
         String pizzaSpecial = "Special";
 
         return pizzaChoice.equalsIgnoreCase(pizza1) ||
-                pizzaChoice.equalsIgnoreCase(pizza2) ||
-                pizzaChoice.equalsIgnoreCase(pizza3) ||
-                pizzaChoice.equalsIgnoreCase(pizza4) ||
-                pizzaChoice.equalsIgnoreCase(pizzaSpecial);
+                        pizzaChoice.equalsIgnoreCase(pizza2) ||
+                        pizzaChoice.equalsIgnoreCase(pizza3) ||
+                        pizzaChoice.equalsIgnoreCase(pizza4) ||
+                        pizzaChoice.equalsIgnoreCase(pizzaSpecial);
     }
 
     public static boolean isInputValid(int an) {
