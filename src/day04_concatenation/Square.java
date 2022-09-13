@@ -1,4 +1,4 @@
-package day04_concatenationSelfPracticing;
+package day04_concatenation;
 
 public class Square {
     public static void main(String[] args) {

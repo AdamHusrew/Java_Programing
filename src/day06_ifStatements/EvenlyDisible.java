@@ -1,5 +1,4 @@
 package day06_ifStatements;
-
 public class EvenlyDisible {
     public static void main(String[] args) {
 

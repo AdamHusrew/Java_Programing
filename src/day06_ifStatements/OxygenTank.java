@@ -1,5 +1,4 @@
-package day06_ifStatementsSelfPracticing;
-
+package day06_ifStatements;
 public class OxygenTank {
 
     public static void main(String[] args) {

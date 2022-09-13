@@ -1,5 +1,4 @@
-package day06_ifStatementsSelfPracticing;
-
+package day06_ifStatements;
 import java.util.Scanner;
 
 public class Calculator {

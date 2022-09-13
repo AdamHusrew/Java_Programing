@@ -1,5 +1,4 @@
-package day08_ternary_switch;
-
+package day08_ternarySwitch;
 public class TernaryIntro3 {
 
     public static void main(String[] args) {

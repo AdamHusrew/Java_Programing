@@ -1,5 +1,4 @@
 package day08_ternarySwitch;
-
 public class HttpStatus {
 
     public static void main(String[] args) {

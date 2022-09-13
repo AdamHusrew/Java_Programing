@@ -1,4 +1,4 @@
-package day04_concatenationSelfPracticing;
+package day04_concatenation;
 
 public class EmployeeInfo {
     public static void main(String[] args) {

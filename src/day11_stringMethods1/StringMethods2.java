@@ -1,4 +1,4 @@
-package day11_string;
+package day11_stringMethods1;
 
 public class StringMethods2 {
 

@@ -1,4 +1,4 @@
-package day06_ifStatementsSelfPracticing;
+package day06_ifStatements;
 
 public class AgeGroups {
 

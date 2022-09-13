@@ -1,4 +1,4 @@
-package day06_ifStatementsSelfPracticing;
+package day07_ifStatements;
 
 public class PosNegZero {
 

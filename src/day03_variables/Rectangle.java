@@ -1,4 +1,4 @@
-package day03_variablesSelfPracticing;
+package day03_variables;
 
 public class Rectangle {
 
