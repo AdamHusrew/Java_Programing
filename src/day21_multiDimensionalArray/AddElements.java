@@ -1,6 +1,6 @@
 package day21_multiDimensionalArray;
 
-import utilities.ArraysUtility;
+import Utilities.ArrayUtilities;
 
 import java.util.Arrays;
 
@@ -22,7 +22,7 @@ public class AddElements {
 
         System.out.println(Arrays.toString(numbers));
 
-        numbers = ArraysUtility.addElement(numbers, 50);
+        numbers = ArrayUtilities.addElement(numbers, 50);
 
         System.out.println(Arrays.toString(numbers));
 
@@ -31,11 +31,11 @@ public class AddElements {
 
         double[] nums = {1.5, 2.5, 3.5, 4.5};
 
-        nums = ArraysUtility.addElement(nums, 5.5);
+        nums = ArrayUtilities.addElement(nums, 5.5);
 
-        nums = ArraysUtility.addElement(nums, 6.5);
+        nums = ArrayUtilities.addElement(nums, 6.5);
 
-        nums = ArraysUtility.addElement(nums, 7.5);
+        nums = ArrayUtilities.addElement(nums, 7.5);
 
         System.out.println(Arrays.toString(nums));
 
@@ -44,11 +44,11 @@ public class AddElements {
 
         String[] students = {"Yasin", "Sumeye", "Ermek"};
 
-        students = ArraysUtility.addElement(students, "Umran");
+        students = ArrayUtilities.addElement(students, "Umran");
 
-        students = ArraysUtility.addElement(students, "Abidullah");
+        students = ArrayUtilities.addElement(students, "Abidullah");
 
-        students = ArraysUtility.addElement(students, "Muhtar");
+        students = ArrayUtilities.addElement(students, "Muhtar");
 
         System.out.println(Arrays.toString(students));
 
