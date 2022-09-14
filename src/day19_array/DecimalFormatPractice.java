@@ -9,7 +9,7 @@ public class DecimalFormatPractice {
 
         DecimalFormat df = new DecimalFormat("0.0000");
 
-        double n1 = 10.587654;
+        double n1 = 10.58765476474374754454564658465836342343865479656;
 
         System.out.println(  df.format(n1)  );
 
