@@ -12,11 +12,14 @@ public class TaskReplace {
 
         System.out.println("------------------------");
         System.out.println(list);
-
+/*
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).equals("Ahmed"))
                 list.remove(i);
         }
+
+ */
+        list.removeIf(each -> each.equals("Ahmed"));
 
         System.out.println("------------------------");
         System.out.println(list);

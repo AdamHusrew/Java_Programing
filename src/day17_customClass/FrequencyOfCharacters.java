@@ -1,4 +1,4 @@
-package day17_customClassIntroClassObject;
+package day17_customClass;
 
 public class FrequencyOfCharacters {
 

@@ -16,6 +16,10 @@ public class TaskOddNumbersByTwo {
             }
         }
 
+        System.out.println("---------------------");
+        System.out.println(list);
+
+
 
         System.out.println("---------------------");
         System.out.println(list);
