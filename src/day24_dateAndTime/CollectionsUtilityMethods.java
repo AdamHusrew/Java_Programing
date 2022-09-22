@@ -58,6 +58,7 @@ public class CollectionsUtilityMethods {
         }
 
 
+        System.out.println("Ahmet nasılsın ne yapıyorsun?");
 
 
 
