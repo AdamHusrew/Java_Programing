@@ -12,14 +12,7 @@ public class TaskCydeoStudent {
     public static String schoolName = "Cydeo School";
     public static String magicWord = "Wooden Spoon";
 
-    public static void main(String[] args) {
 
-
-        TaskCydeoStudent st=new TaskCydeoStudent("Mehmet", 39, 'M', 14, 25, 16, 'C');
-
-        System.out.println(st);
-
-    }
 
     public TaskCydeoStudent(String name, int age, char gender, int id, int batchNumber, int groupNumber, char grade) {
         this.name = name;

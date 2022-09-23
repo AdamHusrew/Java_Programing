@@ -6,12 +6,7 @@ public class TaskCircle {
     public double diameter=0;
     public static double PI=Math.PI;
 
-    public static void main(String[] args) {
 
-        TaskCircle tcs=new TaskCircle(23.3);
-        System.out.println(tcs);
-
-    }
 
     public TaskCircle(double radius){
         this.radius=radius;
