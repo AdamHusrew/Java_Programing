@@ -1,4 +1,4 @@
-package day28_encapsulation.encapsulation;
+package day28_encapsulation;
 
 public class Test {
 
