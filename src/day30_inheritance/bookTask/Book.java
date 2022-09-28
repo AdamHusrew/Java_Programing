@@ -57,7 +57,7 @@ public class Book {
                 "title='" + title + '\'' +
                 ", type='" + type + '\'' +
                 ", author='" + author + '\'' +
-                ", price=" + price +
+                ", price=$" + price +
                 '}';
     }
 }
