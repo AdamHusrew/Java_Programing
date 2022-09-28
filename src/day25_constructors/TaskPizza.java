@@ -2,7 +2,7 @@ package day25_constructors;
 
 public class TaskPizza {
     public String size;
-    int numberOfCheeseTopping,numberOfPepperoniTopping;
+    public int numberOfCheeseTopping,numberOfPepperoniTopping;
 
     public TaskPizza(String size,int numberOfCheeseTopping,int numberOfPepperoniTopping){
 

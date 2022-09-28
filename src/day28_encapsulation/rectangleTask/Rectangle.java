@@ -1,4 +1,4 @@
-package day28_encapsulation.rectangle;
+package day28_encapsulation.rectangleTask;
 
 public class Rectangle {
 
@@ -9,7 +9,13 @@ public class Rectangle {
         setLength(length);
     }
 
+    public double getWide() {
+        return wide;
+    }
 
+    public double getLength() {
+        return length;
+    }
 
     public void setLength(double length) {
         if (length >0){

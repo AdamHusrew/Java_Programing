@@ -1,4 +1,4 @@
-package day28_encapsulation.square;
+package day28_encapsulation.squareTask;
 
 public class Square {
 
@@ -15,6 +15,10 @@ public class Square {
             System.err.println("Invalid Argument");
             System.exit(0);
         }
+    }
+
+    public double getSide() {
+        return side;
     }
 
     public double calcArea(){

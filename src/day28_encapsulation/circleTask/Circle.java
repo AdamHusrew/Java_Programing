@@ -1,4 +1,4 @@
-package day28_encapsulation.circle;
+package day28_encapsulation.circleTask;
 
 public class Circle {
 
@@ -18,6 +18,14 @@ public class Circle {
             System.err.println("Invalid argument");
             System.exit(0);
         }
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public double getPi() {
+        return pi;
     }
 
     public double calcArea(){

@@ -1,4 +1,4 @@
-package day28_encapsulation.square;
+package day28_encapsulation.squareTask;
 
 public class TestSquare {
 
