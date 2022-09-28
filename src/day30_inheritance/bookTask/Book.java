@@ -7,6 +7,13 @@ public class Book {
     private String author;
     private double price;
 
+    public Book(String title, String type, String author, double price) {
+        setTitle(title);
+        setAuthor(author);
+        setType(type);
+        setPrice(price);
+    }
+
     public void setTitle(String title) {
         this.title = title;
     }
