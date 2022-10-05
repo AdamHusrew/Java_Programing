@@ -66,8 +66,31 @@ public abstract class Car {
         return color;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
     public int getYear() {
         return year;
+    }
+
+    public abstract void start();
+
+    public abstract void drive();
+
+    public void stop(){
+        System.out.println(getMake() + " " + getModel() + " is stopping.");
+    }
+
+    @Override
+    public String toString() {
+        return  getClass().getSimpleName()+ "{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", price=$" + price +
+                ", year=" + year +
+                '}';
     }
 }
 /*
