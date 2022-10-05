@@ -2,7 +2,8 @@ package day32_finalKeyword.personTask;
 
 import java.time.LocalDate;
 
-public class Person {
+public class
+Person {
 
     private String name;
     private final char gender;
