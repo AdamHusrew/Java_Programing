@@ -1,8 +1,7 @@
-package day34_abstraction.carTask;
+package day34_abstraction.ownCarTask;
 
-public class Toyota extends Car{
-
-    public Toyota(String make, String model, int year, String color, double price) {
+public class Honda extends Car{
+    public Honda(String make, String model, int year, String color, double price) {
         super(make, model, year, color, price);
     }
 

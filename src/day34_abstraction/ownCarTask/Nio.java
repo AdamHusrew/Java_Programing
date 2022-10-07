@@ -1,4 +1,4 @@
-package day34_abstraction.carTask;
+package day34_abstraction.ownCarTask;
 
 public class Nio extends Car implements AutoPark,AutoPilot{
     public Nio(String make, String model, int year, String color, double price) {

@@ -1,7 +1,7 @@
-package day34_abstraction.carTask;
+package day34_abstraction.ownCarTask;
 
-public class CydeoCar extends Car implements AutoPark, AutoPilot, Flyable{
-    public CydeoCar(String make, String model, int year, String color, double price) {
+public class Tesla extends Car implements AutoPark,AutoPilot{
+    public Tesla(String make, String model, int year, String color, double price) {
         super(make, model, year, color, price);
     }
 
@@ -24,10 +24,5 @@ public class CydeoCar extends Car implements AutoPark, AutoPilot, Flyable{
     @Override
     public void selfDrive() {
         System.out.println(getMake()+" "+getModel()+" self drive mode is on");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println(getMake()+" "+getModel()+" fly mode is on");
     }
 }

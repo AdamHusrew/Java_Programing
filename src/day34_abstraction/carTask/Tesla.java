@@ -1,28 +1,18 @@
 package day34_abstraction.carTask;
 
-public class Tesla extends Car implements AutoPark,AutoPilot{
-    public Tesla(String make, String model, int year, String color, double price) {
-        super(make, model, year, color, price);
-    }
+public class Tesla extends Car{
 
-    @Override
-    public void drive() {
-        System.out.println("Driving "+getMake()+" "+getModel()+" on the road");
+    public Tesla(String model, String color, int year, double price) {
+        super(model, color, year, price);
     }
 
     @Override
     public void start() {
-        System.out.println("use voice control to start "+getMake()+" "+getModel());
+        System.out.println("Use voice control to start "+ getMake() +" "+getModel());
     }
 
-    @Override
-    public void autoPark() {
-        System.out.println(getMake()+" "+getModel()+" auto park mode is on");
+    public void autoPilot(){
+        System.out.println(getMake() +" "+getModel()+" has auto pilot feature");
     }
 
-
-    @Override
-    public void selfDrive() {
-        System.out.println(getMake()+" "+getModel()+" self drive mode is on");
-    }
 }

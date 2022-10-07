@@ -1,4 +1,4 @@
-package day34_abstraction.carTask;
+package day34_abstraction.ownCarTask;
 
 public class CarShop {
 

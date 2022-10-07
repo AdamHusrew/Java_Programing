@@ -1,57 +1,22 @@
 package day34_abstraction.carTask;
 
-public abstract class Car {
+public abstract class Car { // meat to be inherited, can not be instantiated
+
     private final String make, model;
     private String color;
-    private double  price;
     private final int year;
+    private double price;
 
-    public Car(String make, String model, int year, String color, double price) {
-        //1. make, model, color can not be null
-        //2. make, model, color can not be empty
-        //2. year can not be less than 1886
-        //2. price can not be negative
-        if(make == null || make.isEmpty()){
-            System.err.println("Make cannot be null or empty!");
-            System.exit(1);
-        }
-
-        if(model == null || model.isEmpty()){
-            System.err.println("Model cannot be null or empty!");
-            System.exit(1);
-        }
-
-        if(year < 1886){
-            System.err.println("Year cannot be less than 1986!");
-            System.exit(1);
-        }
-
-
-        this.make = make;
+    public Car(String model, String color, int year, double price) {
+        this.make = getClass().getSimpleName(); // to set the class name to the make of the car
         this.model = model;
-        this.year = year;
         setColor(color);
+        if (year < 1886) {
+            System.err.println("Invalid year: " + year);
+            System.exit(1);
+        }
+        this.year = year;
         setPrice(price);
-
-
-    }
-
-    public void setColor(String color) {
-        //2. make, model, color can not be empty
-        if(color == null || color.isEmpty()){
-            System.err.println("Color cannot be null or empty!");
-            System.exit(1);
-        }
-        this.color = color;
-    }
-
-    public void setPrice(double price) {
-        //2. price can not be negative
-        if (price < 0){
-            System.err.println("Price cannot be negative!");
-            System.exit(1);
-        }
-        this.price = price;
     }
 
     public String getMake() {
@@ -66,97 +31,65 @@ public abstract class Car {
         return color;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
     public int getYear() {
         return year;
     }
 
-    public abstract void start();
-
-    public abstract void drive();
-
-    public void stop(){
-        System.out.println(getMake() + " " + getModel() + " is stopping.");
+    public double getPrice() {
+        return price;
     }
+
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setPrice(double price) {
+        if (price <= 0) {
+            System.err.println("Invalid price: " + price);
+            System.exit(1);
+        }
+        this.price = price;
+    }
+
+
+    protected final void stop(){ // to make sure that non-sub classes outside the package can not access it
+        System.out.println("Press the brake to stop " + make +" "+model);
+    }
+
+    protected abstract void start(); // meant to be overridden
 
     @Override
     public String toString() {
-        return  getClass().getSimpleName()+ "{" +
-                "make='" + make + '\'' +
-                ", model='" + model + '\'' +
+        return make +"{" +
+                "model='" + model + '\'' +
                 ", color='" + color + '\'' +
-                ", price=$" + price +
                 ", year=" + year +
+                ", price= $" + price +
                 '}';
     }
+
+
+
 }
+
 /*
-Car Task:
-	1. Create an Abstract class named Car:
-				Variables:
-					make (final), model (final), year (final), price, color
+	1. Create an abstract class named Car
+			variables:
+				make (final), model (final), color, year (final), price
 
-				Encapsulate all the fields
+			Encapsulate all the fields
+				Conditions:
+					1. year can not be less than 1886
+					2. price can not be negative or zero
 
-				Add a constructor that can set all the fields
+			Add a constructor that can set all the fields
+				Note: Class name can be set to the make of the car
 
-				Condition for setting the fields:
-						1. make, model, color can not be null
-						2. make, model, color can not be empty
-						2. year can not be less than 1886
-						2. price can not be negative
+			Methods:
+				stop() (final): prints "Press the brake"
 
-				abstract methods:
-					start();
-					drive();
+				start() (abstract)
 
-				none abstract methods:
-					stop()
-					toString()
-
-
-	2. Create an interface named AutoPark
-				Variables:
-					hasAutoPark
-
-				Abstract method:
-					autoPark();
-
-	3. Create a child interface of AutoPark named AutoPilot
-						hint: interface can inherit from another interface by using extend keyword
-				Variables:
-					hasAutoPilot
-
-				Abstract method:
-					selfDrive();
-
-	4. Create an interface named Flyable
-				Variables:
-						canFly
-
-				Abstract Method
-					fly();
-
-
-	5. Create a subclass of Car named Toyota
-
-	6. Create a sub class of Car named Honda
-
-	7. Create a subclass of Car named BMW
-
-	8. Create two sub class of Car named Audi &  Mercedes that implements AutoPark interface
-
-	9. Create Two sub classes of Car named Tesla & Nio that implements AutoPark & AutoPilot interfaces
-
-	10 Create a sub class of Car named CydeoCar that implements AutoPark, AutoPilot and Flyable interfaces
-
-	11. Create a class named CarShop:
-			Create an object from each concrete class
-
-			Test all the functions of each objects
-
-            Analyze the relationships between the classes
+				toString(): prints the given car info when a car object is passed in the print statement
  */
