@@ -1,6 +1,6 @@
 package day22_arrayList;
 
-import Utilities.ArrayUtilities;
+import utilities.ArraysUtility;
 
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ public class Test {
 
         System.out.println(Arrays.toString(TaskSwap.swap(numbers,3,4)));
 
-        boolean has25 = ArrayUtilities.contains(numbers, 25);
+        boolean has25 = ArraysUtility.contains(numbers, 25);
 
         System.out.println("has25 = " + has25);
 
@@ -21,7 +21,7 @@ public class Test {
 
         String[] students = {"Sumeye", "Hamza", "Marika"};
 
-        System.out.println( ArrayUtilities.contains(students, "Khashayar")  );
+        System.out.println( ArraysUtility.contains(students, "Khashayar")  );
 
 
 

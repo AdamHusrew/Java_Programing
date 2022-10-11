@@ -18,7 +18,7 @@ public class TryCatchBlocks2 {
         }
 
 
-        System.out.println("Program1 ended");
+      System.out.println("Program1 ended");
 
         System.out.println("-------------------------------------------------------");
 
