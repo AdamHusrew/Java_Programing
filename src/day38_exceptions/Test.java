@@ -17,7 +17,7 @@ public class Test {
 
         System.out.println("-----------------------------");
 
-        if(LocalTime.now().equals(LocalTime.of(4,0))){
+        if(LocalTime.now().equals(LocalTime.of(7,39))){
             throw new BreakTimeException();
         }
 

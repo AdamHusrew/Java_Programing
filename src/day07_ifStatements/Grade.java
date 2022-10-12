@@ -1,8 +1,11 @@
 package day07_ifStatements;
 
+import java.util.Arrays;
+
 public class Grade {
 
     public static void main(String[] args) {
+
 
         char grade = 'A';
 

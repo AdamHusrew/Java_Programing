@@ -4,6 +4,7 @@ public class Grade2 {
 
     public static void main(String[] args) {
 
+
         char grade = 'B';
 
         String result = "";
